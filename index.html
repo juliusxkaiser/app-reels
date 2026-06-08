@@ -3,48 +3,55 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>App Reels — Live</title>
+<title>App Reels — Live · 🇩🇪</title>
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; background: #0c0c0f; color: #fff;
-    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
-    padding: 22px 16px 60px;
-  }
-  h1 { font-size: 26px; margin: 6px 0 4px; }
-  .sub { color: #9a9aa5; font-size: 14px; margin-bottom: 24px; }
-  .grid { display: grid; gap: 26px; max-width: 460px; margin: 0 auto; }
-  .card { background: #16161c; border-radius: 20px; overflow: hidden; box-shadow: 0 14px 40px rgba(0,0,0,.4); }
-  .card h2 { font-size: 18px; margin: 0; padding: 16px 18px 4px; }
-  .card p { margin: 0; padding: 0 18px 14px; color: #9a9aa5; font-size: 13px; }
-  video { width: 100%; display: block; background: #000; }
-  .tag { display:inline-block; font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; margin-left:8px; vertical-align:middle; background:#1FB55F33; color:#46e08a; }
-  footer { text-align:center; color:#6a6a73; font-size:12px; margin-top:30px; }
+  body { margin:0; background:#0c0c0f; color:#fff; font-family:-apple-system,"Segoe UI",system-ui,sans-serif; padding:22px 14px 60px; }
+  h1 { font-size:24px; margin:4px 0 2px; }
+  .sub { color:#9a9aa5; font-size:13px; margin-bottom:22px; }
+  .app { max-width:1000px; margin:0 auto 30px; }
+  .app h2 { font-size:19px; margin:0 0 12px; padding-left:4px; display:flex; align-items:center; gap:8px; }
+  .dot { width:12px; height:12px; border-radius:50%; display:inline-block; }
+  .row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  @media (max-width:640px){ .row { grid-template-columns:1fr; } }
+  .card { background:#16161c; border-radius:16px; overflow:hidden; }
+  .card .lbl { font-size:12px; color:#9a9aa5; padding:8px 12px 0; }
+  video { width:100%; display:block; background:#000; }
+  footer { text-align:center; color:#6a6a73; font-size:12px; margin-top:24px; }
 </style>
 </head>
 <body>
   <h1>📱 App Reels — echte Live-App · 🇩🇪</h1>
-  <div class="sub">Aufgenommen aus den echten Live-Apps. Play tippen · Video lange drücken → speichern.</div>
+  <div class="sub">3 Reels pro App · mit Sound · aus den echten Apps. Play tippen · lange drücken → speichern.</div>
 
-  <div class="grid">
-    <div class="card">
-      <h2>DateHeart <span class="tag">live</span></h2>
-      <p>„Schluss mit Was machen wir heute?" → echtes Date-Ergebnis.</p>
-      <video src="DateHeartReal.mp4" controls playsinline preload="metadata"></video>
-    </div>
-    <div class="card">
-      <h2>GangGlow <span class="tag">live</span></h2>
-      <p>„247 Nachrichten, 0 Pläne" → echte Gruppen-Idee.</p>
-      <video src="GangGlowReal.mp4" controls playsinline preload="metadata"></video>
-    </div>
-    <div class="card">
-      <h2>FamCube <span class="tag">live</span></h2>
-      <p>„Mir ist langweilig" → echter Familienmoment.</p>
-      <video src="FamCubeReal.mp4" controls playsinline preload="metadata"></video>
+  <div class="app">
+    <h2><span class="dot" style="background:#FF3D77"></span> DateHeart — Paare</h2>
+    <div class="row">
+      <div class="card"><div class="lbl">Reel 1</div><video src="dateheart/1.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">Reel 2</div><video src="dateheart/2.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">Reel 3</div><video src="dateheart/3.mp4" controls playsinline preload="metadata"></video></div>
     </div>
   </div>
 
-  <footer>Reel-Studio · echte Live-Apps</footer>
+  <div class="app">
+    <h2><span class="dot" style="background:#E8A33B"></span> GangGlow — Freunde</h2>
+    <div class="row">
+      <div class="card"><div class="lbl">Reel 1</div><video src="ganglow/1.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">Reel 2</div><video src="ganglow/2.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">Reel 3</div><video src="ganglow/3.mp4" controls playsinline preload="metadata"></video></div>
+    </div>
+  </div>
+
+  <div class="app">
+    <h2><span class="dot" style="background:#2ECC71"></span> FamCube — Familie</h2>
+    <div class="row">
+      <div class="card"><div class="lbl">Reel 1</div><video src="famcube/1.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">Reel 2</div><video src="famcube/2.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">Reel 3</div><video src="famcube/3.mp4" controls playsinline preload="metadata"></video></div>
+    </div>
+  </div>
+
+  <footer>Reel-Studio · echte Live-Apps · Deutsch</footer>
 </body>
 </html>
