@@ -3,70 +3,71 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>App Reels — Live · 🇩🇪</title>
+<title>App Reels — Live</title>
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
   body { margin:0; background:#0c0c0f; color:#fff; font-family:-apple-system,"Segoe UI",system-ui,sans-serif; padding:22px 14px 60px; }
   h1 { font-size:24px; margin:4px 0 2px; }
   .sub { color:#9a9aa5; font-size:13px; margin-bottom:22px; }
-  .band { max-width:1000px; margin:0 auto 14px; font-size:13px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; color:#ffd36b; padding-left:4px; }
-  .band.simple { color:#6a6a73; margin-top:34px; }
-  .app { max-width:1000px; margin:0 auto 26px; }
-  .app h2 { font-size:18px; margin:0 0 10px; padding-left:4px; display:flex; align-items:center; gap:8px; }
+  .band { max-width:1000px; margin:30px auto 12px; font-size:14px; font-weight:800; letter-spacing:.04em; padding-left:4px; }
+  .hot { color:#ffd36b; }
+  .simple { color:#6a6a73; text-transform:uppercase; font-size:12px; }
+  .app { max-width:1000px; margin:0 auto 22px; }
+  .app h2 { font-size:17px; margin:0 0 10px; padding-left:4px; display:flex; align-items:center; gap:8px; }
   .dot { width:11px; height:11px; border-radius:50%; display:inline-block; }
   .row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
   @media (max-width:640px){ .row { grid-template-columns:1fr; } }
   .card { background:#16161c; border-radius:16px; overflow:hidden; }
   .card .lbl { font-size:12px; color:#9a9aa5; padding:8px 12px 0; }
   video { width:100%; display:block; background:#000; }
-  .hero .row { grid-template-columns:repeat(3,1fr); }
-  @media (max-width:640px){ .hero .row { grid-template-columns:1fr; } }
   footer { text-align:center; color:#6a6a73; font-size:12px; margin-top:24px; }
 </style>
 </head>
 <body>
-  <h1>📱 App Reels — echte Live-App · 🇩🇪</h1>
-  <div class="sub">Mit Sound · Klick-Effekten · aus den echten Apps. Play tippen · lange drücken → speichern.</div>
+  <h1>📱 App Reels — echte Live-App</h1>
+  <div class="sub">Mit Sound + Klick-Effekten · aus den echten Apps. Play tippen · lange drücken → speichern.</div>
 
-  <div class="band">🔥 Krass-Marketing (Hype)</div>
-  <div class="app hero">
-    <div class="row">
-      <div class="card"><div class="lbl">DateHeart</div><video src="hype/dateheart.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">GangGlow</div><video src="hype/ganglow.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">FamCube</div><video src="hype/famcube.mp4" controls playsinline preload="metadata"></video></div>
-    </div>
-  </div>
+  <div class="band hot">🔥 Krass-Marketing · 🇩🇪 Deutsch</div>
+  <div class="app"><div class="row">
+    <div class="card"><div class="lbl">DateHeart</div><video src="hype/dateheart.mp4" controls playsinline preload="metadata"></video></div>
+    <div class="card"><div class="lbl">GangGlow</div><video src="hype/ganglow.mp4" controls playsinline preload="metadata"></video></div>
+    <div class="card"><div class="lbl">FamCube</div><video src="hype/famcube.mp4" controls playsinline preload="metadata"></video></div>
+  </div></div>
 
-  <div class="band simple">Einfach · 3 pro App</div>
+  <div class="band hot">🔥 Krass-Marketing · 🇬🇧 English</div>
+  <div class="app"><div class="row">
+    <div class="card"><div class="lbl">DateHeart</div><video src="en/hype/dateheart.mp4" controls playsinline preload="metadata"></video></div>
+    <div class="card"><div class="lbl">GangGlow</div><video src="en/hype/ganglow.mp4" controls playsinline preload="metadata"></video></div>
+    <div class="card"><div class="lbl">FamCube</div><video src="en/hype/famcube.mp4" controls playsinline preload="metadata"></video></div>
+  </div></div>
 
+  <div class="band simple">🇩🇪 Einfach · 3 pro App</div>
   <div class="app">
     <h2><span class="dot" style="background:#FF3D77"></span> DateHeart — Paare</h2>
     <div class="row">
-      <div class="card"><div class="lbl">Reel 1</div><video src="dateheart/1.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">Reel 2</div><video src="dateheart/2.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">Reel 3</div><video src="dateheart/3.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">1</div><video src="dateheart/1.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">2</div><video src="dateheart/2.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">3</div><video src="dateheart/3.mp4" controls playsinline preload="metadata"></video></div>
     </div>
   </div>
-
   <div class="app">
     <h2><span class="dot" style="background:#E8A33B"></span> GangGlow — Freunde</h2>
     <div class="row">
-      <div class="card"><div class="lbl">Reel 1</div><video src="ganglow/1.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">Reel 2</div><video src="ganglow/2.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">Reel 3</div><video src="ganglow/3.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">1</div><video src="ganglow/1.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">2</div><video src="ganglow/2.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">3</div><video src="ganglow/3.mp4" controls playsinline preload="metadata"></video></div>
     </div>
   </div>
-
   <div class="app">
     <h2><span class="dot" style="background:#2ECC71"></span> FamCube — Familie</h2>
     <div class="row">
-      <div class="card"><div class="lbl">Reel 1</div><video src="famcube/1.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">Reel 2</div><video src="famcube/2.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="card"><div class="lbl">Reel 3</div><video src="famcube/3.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">1</div><video src="famcube/1.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">2</div><video src="famcube/2.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="card"><div class="lbl">3</div><video src="famcube/3.mp4" controls playsinline preload="metadata"></video></div>
     </div>
   </div>
 
-  <footer>Reel-Studio · echte Live-Apps · Deutsch</footer>
+  <footer>Reel-Studio · echte Live-Apps</footer>
 </body>
 </html>
